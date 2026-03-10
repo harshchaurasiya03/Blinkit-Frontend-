@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blinkit</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+    <header>
+        <div class="headerLeft">
+            <div class="logo">
+                <a href="#">
+                    <svg width="134" height="30" viewBox="0 0 114 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.3342 7.186C16.2619 7.186 17.9832 7.66644 19.4978 8.62732C21.0262 9.57447 22.2242 10.9197 23.0917 12.663C23.9316 14.3377 24.3516 16.3075 24.3516 18.5724C24.3516 20.7687 23.9316 22.7316 23.0917 24.4612C22.2517 26.1908 21.0675 27.5429 19.5391 28.5175C17.9969 29.5058 16.2619 30 14.3342 30C12.9297 30 11.6078 29.7117 10.3685 29.1352C9.12927 28.5587 8.06901 27.7488 7.18775 26.7056V29.4852H0V0H7.18775V10.4598C8.06901 9.41661 9.12927 8.61359 10.3685 8.05079C11.6078 7.47426 12.9297 7.186 14.3342 7.186ZM12.1861 24.0494C13.2051 24.0494 14.1139 23.8161 14.9125 23.3493C15.7112 22.8826 16.3377 22.2306 16.7921 21.3933C17.2465 20.5697 17.4737 19.6294 17.4737 18.5724C17.4737 17.5429 17.2465 16.6095 16.7921 15.7721C16.3377 14.9348 15.7112 14.2828 14.9125 13.8161C14.1139 13.3493 13.2051 13.116 12.1861 13.116C11.2223 13.116 10.3617 13.3493 9.60432 13.8161C8.84699 14.269 8.2549 14.9073 7.82804 15.731C7.40118 16.5683 7.18775 17.5154 7.18775 18.5724C7.18775 19.6294 7.40118 20.5765 7.82804 21.4139C8.2549 22.2375 8.84699 22.8826 9.60432 23.3493C10.3617 23.8161 11.2223 24.0494 12.1861 24.0494Z" fill="#F8CB46"></path>
+                        <path d="M25.3356 29.4852V0H32.5233V29.4852H25.3356Z" fill="#F8CB46"></path>
+                        <path d="M34.5607 29.4852V7.68016H41.7071V29.4852H34.5607Z" fill="#F8CB46"></path>
+                        <path d="M57.2319 7.186C58.7603 7.186 60.1372 7.5429 61.3627 8.25669C62.5882 8.95676 63.5521 9.94509 64.2544 11.2217C64.9291 12.512 65.2664 13.9739 65.2664 15.6074V29.4852H58.4092V17.2135C58.4092 16.4173 58.2508 15.7104 57.9341 15.0927C57.6312 14.4612 57.1974 13.9739 56.6329 13.6307C56.0821 13.2876 55.4349 13.116 54.6914 13.116C53.9891 13.116 53.3419 13.2876 52.7498 13.6307C52.1577 13.9602 51.6965 14.4132 51.366 14.9897C51.0218 15.5388 50.8496 16.1839 50.8496 16.9252L50.8083 29.4852H43.6619V7.68016H50.8083V10.1716C51.483 9.23816 52.3849 8.51064 53.5141 7.98902C54.6432 7.45367 55.8824 7.186 57.2319 7.186Z" fill="#F8CB46"></path>
+                        <path d="M81.0597 17.2135L89.1769 29.4852H81.0597L76.3091 21.7639L74.1198 24.2965V29.4852H66.932V0H74.1198V16.2869L81.0184 7.68016H89.1356L81.0597 17.2135Z" fill="#F8CB46"></path>
+                        <path d="M34.5569 0.00232667H41.7267V5.59207H34.5569V0.00232667Z" fill="#F8CB46"></path>
+                        <path d="M90.3176 29.4198V7.61479H97.464V29.4198H90.3176Z" fill="#54B226"></path>
+                        <path d="M112.575 23.2634L114 27.855C113.353 28.4727 112.534 28.9737 111.542 29.3581C110.564 29.7424 109.607 29.9346 108.671 29.9346C107.322 29.9346 106.117 29.6395 105.057 29.0492C103.996 28.4452 103.17 27.6079 102.578 26.5372C101.986 25.494 101.69 24.2929 101.69 22.9339V13.3183H98.819V7.61479H101.69V0.00241089H108.547V7.61479H113.071V13.3183H108.547V21.6161C108.547 22.3162 108.733 22.8859 109.105 23.3251C109.477 23.7644 109.952 23.984 110.53 23.984C110.943 23.984 111.329 23.9223 111.687 23.7987C112.045 23.6752 112.341 23.4967 112.575 23.2634Z" fill="#54B226"></path>
+                        <path d="M90.2609 0.00241089H97.4307V5.59215H90.2609V0.00241089Z" fill="#54B226"></path>
+                    </svg>
+                </a>
+            </div>
+            <div class="headerAddress">
+                <h3>Delivery in 8 minutes</h3>
+                <p>Chandigarh, India</p>
+            </div>
+        </div>
+        
+        <div class="searchBox--container">
+            <div class="searchBox">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search 'sugar'">
+            </div>
+        </div>
+        
+        <div class="headerBtn">
+            <a href="#" class="login-btn">Login</a>
+            <button class="cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                My Cart
+            </button>
+        </div>
+    </header>
+    <section class="bannerSection">
+        <img src="img/paan.png" alt="Paan Product">
+    </section>
+
+    <section class="orderBanner">
+        <div class="orderBannerItems">
+            <img src="img/pharmacy.jpg" alt="pharmacy product">
+        </div>
+        <div class="orderBannerItems">
+            <img src="img/Pet-Care_WEB.jpg" alt="Pet care product">
+        </div>
+        <div class="orderBannerItems">
+            <img src="img/babycare-WEB.jpg" alt="Baby Care product">
+        </div>
+    </section>
+
+    <section class="categorySection">
+        <div class="categoryItems">
+            <img src="img/paan-corner_web.jpg" alt="">
+        </div>
+        <div class="categoryItems">
+            <img src="img/Slice-2_10.png" alt="">
+        </div>
+        <div class="categoryItems">
+            <img src="img/Slice-3_9.png" alt="">
+        </div>
+        <div class="categoryItems">
+            <img src="img/Slice-4_9.png" alt="">
+        </div>
+        <div class="categoryItems">
+            <img src="img/Slice-5_4.png" alt="">
+        </div>
+        <div class="categoryItems">
+            <img src="img/Slice-6_5.png" alt="">
+        </div>
+        <div class="categoryItems">
+            <img src="img/Slice-7_3.png" alt="">
+        </div>
+        <div class="categoryItems">
+            <img src="img/Slice-8_4 (1).png" alt="">
+        </div>
+        <div class="categoryItems">
+            <img src="img/Slice-9_3.png" alt="">
+        </div>
+        <div class="categoryItems">
+            <img src="img/Slice-10.png" alt="">
+        </div>
+        <div class="categoryItems">
+            <img src="img/Slice-11.png" alt="">
+        </div>
+        <div class="categoryItems">
+            <img src="img/Slice-12.png" alt="">
+        </div>
+        <div class="categoryItems">
+            <img src="img/Slice-13.png" alt="">
+        </div>
+        <div class="categoryItems">
+            <img src="img/Slice-14.png" alt="">
+        </div>
+        <div class="categoryItems">
+            <img src="img/Slice-15.png" alt="">
+        </div>
+        <div class="categoryItems">
+            <img src="img/Slice-16.png" alt="">
+        </div>
+        <div class="categoryItems">
+            <img src="img/Slice-17.png" alt="">
+        </div>
+        <div class="categoryItems">
+            <img src="img/Slice-18.png" alt="">
+        </div>
+        <div class="categoryItems">
+            <img src="img/Slice-19.png" alt="">
+        </div>
+        <div class="categoryItems">
+            <img src="img/Slice-20.png" alt="">
+        </div>
+    </section>
+    <section class="full-product-section">
+        <section class="productSection">
+
+            <div class="headingRow">
+                <h2>Dairy, Bread & Eggs</h2>
+                <a>see all</a>
+            </div>
+
+            <div class="productRow">
+                <div class="productItems">
+                    <img src="img/product-1.jpg" alt="">
+                    <div class="productDetails">
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20 min</span>
+                        </div>
+                        <h3>Verka Standard Fresh Milk</h3>
+                        <p>1ltr</p>
+                        <div class="priceAdd">
+                            <span class="price">₹63</span>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productItems">
+                    <img src="img/prd-3.jpg" alt="">
+                    <div class="productDetails">
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20 min</span>
+                        </div>
+                        <h3>Verka Curd</h3>
+                        <p>400g</p>
+                        <div class="priceAdd">
+                            <span class="price">₹32</span>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productItems">
+                    <img src="img/prd-2.jpg" alt="">
+                    <div class="productDetails">
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20 min</span>
+                        </div>
+                        <h3>Verka Double Toned Milk</h3>
+                        <p>500ml</p>
+                        <div class="priceAdd">
+                            <span class="price">₹26</span>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productItems">
+                    <img src="img/prd4.jpg" alt="">
+                    <div class="productDetails">
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20 min</span>
+                        </div>
+                        <h3>Verka Curd</h3>
+                        <p>150g</p>
+                        <div class="priceAdd">
+                            <span class="price">₹20</span>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productItems">
+                    <img src="img/prd-5.jpg" alt="">
+                    <div class="productDetails">
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20 min</span>
+                        </div>
+                        <h3>Amul Salted Butter</h3>
+                        <p>100g</p>
+                        <div class="priceAdd">
+                            <span class="price">₹60</span>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productItems">
+                    <img src="img/prdt-6.jpg" alt="">
+                    <div class="productDetails">
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20 min</span>
+                        </div>
+                        <h3>Verka Full Cream Milk</h3>
+                        <p>500ml</p>
+                        <div class="priceAdd">
+                            <span class="price">₹35</span>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="productSection">
+
+            <div class="headingRow">
+                <h2>Rolling paper & tobacco</h2>
+                <a>see all</a>
+            </div>
+
+            <div class="productRow">
+                <div class="productItems">
+                    <img src="img/roll-1.jpg" alt="">
+                    <div class="productDetails">
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20 min</span>
+                        </div>
+                        <h3>Ultimate Rolling Paper with Filter Tips &...</h3>
+                        <p>1 pack (32 pieces)</p>
+                        <div class="priceAdd">
+                            <span class="price">₹90</span>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productItems">
+                    <img src="img/roll-2.jpg" alt="">
+                    <div class="productDetails">
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20 min</span>
+                        </div>
+                        <h3>Perfect Rolled Cones (Natural) - Bongchie</h3>
+                        <p>3 pack</p>
+                        <div class="priceAdd">
+                            <span class="price">₹45</span>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productItems">
+                    <img src="img/roll-3.jpg" alt="">
+                    <div class="productDetails">
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20 min</span>
+                        </div>
+                        <h3>Ultimate Rolling Paper with Filter Tips &...</h3>
+                        <p>1 pack (32 Leaves + 32...</p>
+                        <div class="priceAdd">
+                            <span class="price">₹80</span>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productItems">
+                    <img src="img/roll-4.jpg" alt="">
+                    <div class="productDetails">
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20 min</span>
+                        </div>
+                        <h3>Rolled Cones by SLIMJIM</h3>
+                        <p>1 pack (6 pieces)</p>
+                        <div class="priceAdd">
+                            <span class="price">₹90</span>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productItems">
+                    <img src="img/roll-5.jpg" alt="">
+                    <div class="productDetails">
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20 min</span>
+                        </div>
+                        <h3>Colour Roach - Stash Pro</h3>
+                        <p>32 sheets</p>
+                        <div class="priceAdd">
+                            <span class="price">₹50</span>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productItems">
+                    <img src="img/roll-6.jpg" alt="">
+                    <div class="productDetails">
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20 min</span>
+                        </div>
+                        <h3>Brown Rolling Paper (King Size) - Stash Pro</h3>
+                        <p>1 unit (32 pieces)</p>
+                        <div class="priceAdd">
+                            <span class="price">₹50</span>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="productSection">
+
+            <div class="headingRow">
+                <h2>Snacks & Munchies</h2>
+                <a>see all</a>
+            </div>
+
+            <div class="productRow">
+                <div class="productItems">
+                    <img src="img/snack-1.jpg" alt="">
+                    <div class="productDetails">
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20 min</span>
+                        </div>
+                        <h3>Cheetos Flamin Hot Crunchy Puffs</h3>
+                        <p>28.3g</p>
+                        <div class="priceAdd">
+                            <span class="price">₹161</span>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productItems">
+                    <img src="img/snack-2.jpg" alt="">
+                    <div class="productDetails">
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20 min</span>
+                        </div>
+                        <h3>Protein Chef Baked Coated Peanuts (Masa...</h3>
+                        <p>50 g</p>
+                        <div class="priceAdd">
+                            <span class="price">₹69</span>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productItems">
+                    <img src="img/snack-3.jpg" alt="">
+                    <div class="productDetails">
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20 min</span>
+                        </div>
+                        <h3>Kab's Jackpot Fiery and Crunchy Crisps</h3>
+                        <p>80 g</p>
+                        <div class="priceAdd">
+                            <span class="price">₹65</span>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productItems">
+                    <img src="img/snack-4.jpg" alt="">
+                    <div class="productDetails">
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20 min</span>
+                        </div>
+                        <h3>Cheetos Cheese Flavoured Puffs</h3>
+                        <p>24.8 g</p>
+                        <div class="priceAdd">
+                            <span class="price">₹161</span>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productItems">
+                    <img src="img/snack-5.jpg" alt="">
+                    <div class="productDetails">
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20 min</span>
+                        </div>
+                        <h3>Cheetos Flamin'Hot Twisted Corn Puffs</h3>
+                        <p>30 g</p>
+                        <div class="priceAdd">
+                            <span class="price">₹171</span>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productItems">
+                    <img src="img/snack-6.jpg" alt="">
+                    <div class="productDetails">
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20 min</span>
+                        </div>
+                        <h3>Kab's Jackpot Chillis Lemon Stix Crisps</h3>
+                        <p>80 g</p>
+                        <div class="priceAdd">
+                            <span class="price">₹65</span>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="productSection">
+
+            <div class="headingRow">
+                <h2>Hookah</h2>
+                <a>see all</a>
+            </div>
+
+            <div class="productRow">
+                <div class="productItems">
+                    <img src="img/hookah-1.jpg" alt="">
+                    <div class="productDetails">
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20 min</span>
+                        </div>
+                        <h3>Premium Magic Coal By Stash Pro</h3>
+                        <p>1 pack (10 pieces)</p>
+                        <div class="priceAdd">
+                            <span class="price">₹80</span>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productItems">
+                    <img src="img/hookah-2.jpg" alt="">
+                    <div class="productDetails">
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20 min</span>
+                        </div>
+                        <h3>Flat Coconut Hookah Coal Cubes by Stash...</h3>
+                        <p>30 pieces</p>
+                        <div class="priceAdd">
+                            <span class="price">₹140</span>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productItems">
+                    <img src="img/hookah-3.jpg" alt="">
+                    <div class="productDetails">
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20 min</span>
+                        </div>
+                        <h3>Calm - Blueberry Non-Tobacco Herbal...</h3>
+                        <p>10 g</p>
+                        <div class="priceAdd">
+                            <span class="price">₹100</span>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productItems">
+                    <img src="img/hookah-4.jpg" alt="">
+                    <div class="productDetails">
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20 min</span>
+                        </div>
+                        <h3>Double Apple Herbal Hookah Flavor...</h3>
+                        <p>50 g</p>
+                        <div class="priceAdd">
+                            <span class="price">₹100</span>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productItems">
+                    <img src="img/hookah-5.jpg" alt="">
+                    <div class="productDetails">
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20 min</span>
+                        </div>
+                        <h3>Calm - Paan Non-Tobacco Herbal...</h3>
+                        <p>10 g</p>
+                        <div class="priceAdd">
+                            <span class="price">₹100</span>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productItems">
+                    <img src="img/hookah-6.jpg" alt="">
+                    <div class="productDetails">
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20 min</span>
+                        </div>
+                        <h3>Instant Ignite Magic Coal by Bongchie</h3>
+                        <p>1 pack(10 pieces)</p>
+                        <div class="priceAdd">
+                            <span class="price">₹80</span>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="productSection">
+
+            <div class="headingRow">
+                <h2>Mouth fresheners</h2>
+                <a>see all</a>
+            </div>
+
+            <div class="productRow">
+                <div class="productItems">
+                    <img src="img/mouth-1.jpg" alt="">
+                    <div class="productDetails">
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20 min</span>
+                        </div>
+                        <h3>Trident Spearmint Gum (Sugar Free)</h3>
+                        <p>1 pack (14 pieces)</p>
+                        <div class="priceAdd">
+                            <span class="price">₹180</span>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productItems">
+                    <img src="img/mouth-2.jpg" alt="">
+                    <div class="productDetails">
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20 min</span>
+                        </div>
+                        <h3>Impact Sugar Free Gum Mint Candy (Fresh Mints)</h3>
+                        <p>14 g</p>
+                        <div class="priceAdd">
+                            <span class="price">₹149</span>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productItems">
+                    <img src="img/mouth-3.jpg" alt="">
+                    <div class="productDetails">
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20 min</span>
+                        </div>
+                        <h3>Trident Tropical Twist Gum (Sugar Free)</h3>
+                        <p>1 pack (14 pieces)</p>
+                        <div class="priceAdd">
+                            <span class="price">₹180</span>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productItems">
+                    <img src="img/mouth-4.jpg" alt="">
+                    <div class="productDetails">
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20 min</span>
+                        </div>
+                        <h3>Chandan Jeera Goli Digestive Tablets</h3>
+                        <p>100 g</p>
+                        <div class="priceAdd">
+                            <span class="price">₹48</span>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productItems">
+                    <img src="img/mouth-5.jpg" alt="">
+                    <div class="productDetails">
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20 min</span>
+                        </div>
+                        <h3>Rajnigandha Silver Pearls - Silver Coated...</h3>
+                        <p>6 g</p>
+                        <div class="priceAdd">
+                            <span class="price">₹60</span>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productItems">
+                    <img src="img/mouth-6.jpg" alt="">
+                    <div class="productDetails">
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20 min</span>
+                        </div>
+                        <h3>Pass Pass Sweet Magic Mix Mouth Freshener</h3>
+                        <p>105 g</p>
+                        <div class="priceAdd">
+                            <span class="price">₹70</span>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="productSection">
+
+            <div class="headingRow">
+                <h2>Cold Drinks & Juices</h2>
+                <a>see all</a>
+            </div>
+
+            <div class="productRow">
+                <div class="productItems">
+                    <img src="img/cold-1.jpg" alt="">
+                    <div class="productDetails">
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20 min</span>
+                        </div>
+                        <h3>Coca-Cola Soft Drink(750 ml)</h3>
+                        <p>750 ml</p>
+                        <div class="priceAdd">
+                            <span class="price">₹40</span>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productItems">
+                    <img src="img/cold-2.jpg" alt="">
+                    <div class="productDetails">
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20 min</span>
+                        </div>
+                        <h3>Verka Plain Lassi</h3>
+                        <p>800 ml</p>
+                        <div class="priceAdd">
+                            <span class="price">₹30</span>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productItems">
+                    <img src="img/cold-3.jpg" alt="">
+                    <div class="productDetails">
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20 min</span>
+                        </div>
+                        <h3>Limca Lemon 'N' Lime Soft Drink 750 ml</h3>
+                        <p>750 ml</p>
+                        <div class="priceAdd">
+                            <span class="price">₹40</span>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productItems">
+                    <img src="img/cold-4.jpg" alt="">
+                    <div class="productDetails">
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20 min</span>
+                        </div>
+                        <h3>Bisleri Packeged Water(1 l)</h3>
+                        <p>1 ltr</p>
+                        <div class="priceAdd">
+                            <span class="price">₹20</span>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productItems">
+                    <img src="img/cold-5.jpg" alt="">
+                    <div class="productDetails">
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20 min</span>
+                        </div>
+                        <h3>Bisleri Packeged Water</h3>
+                        <p>5 ltr</p>
+                        <div class="priceAdd">
+                            <span class="price">₹70</span>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productItems">
+                    <img src="img/cold-6.jpg" alt="">
+                    <div class="productDetails">
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20 min</span>
+                        </div>
+                        <h3>Coca-Cola Soft Drink-Pack of (2x250 ml)</h3>
+                        <p>2x250 ml</p>
+                        <div class="priceAdd">
+                            <span class="price">₹40</span>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="productSection">
+
+            <div class="headingRow">
+                <h2>Candies & Gums</h2>
+                <a>see all</a>
+            </div>
+
+            <div class="productRow">
+                <div class="productItems">
+                    <img src="img/gum-1.jpg" alt="">
+                    <div class="productDetails">
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20 min</span>
+                        </div>
+                        <h3>Happydent Wave Sugarfree Mint Chewin...</h3>
+                        <p>28.9 g</p>
+                        <div class="priceAdd">
+                            <span class="price">₹48</span>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productItems">
+                    <img src="img/gum-2.jpg" alt="">
+                    <div class="productDetails">
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20 min</span>
+                        </div>
+                        <h3>BChupa Chups Sour Bites Mixed Fruit Candy</h3>
+                        <p>61.6 g</p>
+                        <div class="priceAdd">
+                            <span class="price">₹35</span>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productItems">
+                    <img src="img/gum-4.jpg" alt="">
+                    <div class="productDetails">
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20 min</span>
+                        </div>
+                        <h3>Chupa Chups Sour Belt Mixed Fruit Candy...</h3>
+                        <p>3 x 57.6 g</p>
+                        <div class="priceAdd">
+                            <span class="price">₹81</span>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productItems">
+                    <img src="img/gum-3.jpg" alt="">
+                    <div class="productDetails">
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20 min</span>
+                        </div>
+                        <h3>Kopika Cappuccino Candy- Family Pack</h3>
+                        <p>140 g</p>
+                        <div class="priceAdd">
+                            <span class="price">₹46</span>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productItems">
+                    <img src="img/gum-5.jpg" alt="">
+                    <div class="productDetails">
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20 min</span>
+                        </div>
+                        <h3>Orbit Searmint Flavour Sugar Free Chewing...</h3>
+                        <p>22 g</p>
+                        <div class="priceAdd">
+                            <span class="price">₹50</span>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productItems">
+                    <img src="img/gum-6.jpg" alt="">
+                    <div class="productDetails">
+                        <div class="delivery-time">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>20 min</span>
+                        </div>
+                        <h3>Parle Melody Chocolaty Candy</h3>
+                        <p>371 g</p>
+                        <div class="priceAdd">
+                            <span class="price">₹100</span>
+                            <button>ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <footer>
+        <div class="footer-mid">
+            <div class="footer-mid1">
+                <div class="footer-mid1-left">
+                    <h3>Useful Links</h3>
+                    <div class="usefulLinks">
+                        <ul>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Privacy</a></li>
+                            <li><a href="">Terms</a></li>
+                            <li><a href="">FAQs</a></li>
+                            <li><a href="">Security</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">Partner</a></li>
+                            <li><a href="">Franchise</a></li>
+                            <li><a href="">Seller</a></li>
+                            <li><a href="">Warehouse</a></li>
+                            <li><a href="">Deliver</a></li>
+                            <li><a href="">Resources</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">Recipes</a></li>
+                            <li><a href="">Bistro</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-mid1-right">
+                    <div class="categories-header">
+                        <h3>Categories</h3>
+                        <span>see all</span>
+                    </div>
+                    <div class="categories">
+                        <ul>
+                            <li><a href="">Vegetables & Fruits</a></li>
+                            <li><a href="">Cold Drinks & Juices</a></li>
+                            <li><a href="">Bakery & Biscuits</a></li>
+                            <li><a href="">Dry Fruits, Masala & Oil</a></li>
+                            <li><a href="">Paan Corner</a></li>
+                            <li><a href="">Pharma & Wellness</a></li>
+                            <li><a href="">Ice Cream & FrozenDesserts</a></li>
+                            <li><a href="">Beauty &Cosmetics</a></li>
+                            <li><a href="">Stationery Needs</a></li>
+                            <li><a href="">Print Store</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">Dairy & Breakfast</a></li>
+                            <li><a href="">Instant & Frozen Food</a></li>
+                            <li><a href="">Sweet Tooth</a></li>
+                            <li><a href="">Sauces & Spreads</a></li>
+                            <li><a href="">Organic & Premium</a></li>
+                            <li><a href="">Cleaning Essentials</a></li>
+                            <li><a href="">Personal Care</a></li>
+                            <li><a href="">Fashion & Accessories</a></li>
+                            <li><a href="">Books</a></li>
+                            <li><a href="">E-Gift Cards</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">Munchies</a></li>
+                            <li><a href="">Tea, Coffee & Health Drinks</a></li>
+                            <li><a href="">Atta, Rice & Dal</a></li>
+                            <li><a href="">Chicken, Meat & Fish</a></li>
+                            <li><a href="">Baby Care</a></li>
+                            <li><a href="">Home & Office</a></li>
+                            <li><a href="">Pet Care</a></li>
+                            <li><a href="">Electronics & Electricals</a></li>
+                            <li><a href="">Toys & Games</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-mid2">
+            <p>© Blink Commerce Private Limited, 2016-2025</p>
+            <div class="appIcons">
+                <h5>Download App</h5>
+                <img width="100px" src="img/Download.webp" alt="">
+                <img width="100px" src="img/playstore.webp" alt="">
+            </div>
+            <div class="social-logo">
+                <img width="40px" src="img/twitter.png" alt="">
+                <img width="40px" src="img/facebook.png" alt="">
+                <img width="40px" src="img/instagram.avif" alt="">
+                <img width="40px" src="img/linkedin.png" alt="">
+                <img width="40px" src="img/thread.webp" alt="">
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>"Blinkit" is owned & managed by "Blink Commerce Private Limited" and is not related, linked or
+                interconnected in whatsoever manner or nature, to "GROFFR.COM" which is a real estate services business
+                operated by "Redstone Consultancy Services Private Limited".</p>
+        </div>
+    </footer>
+    
+    <script>
+        const searchBox = document.querySelector('.searchBox');
+        let lastScroll = 0;
+        
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 100) { // Only fix after scrolling 100px
+                searchBox.classList.add('fixed');
+            } else {
+                searchBox.classList.remove('fixed');
+            }
+            
+            lastScroll = currentScroll;
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+@media only screen and (min-width: 400px) and (max-width: 575px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 15px;
+    position: relative;
+    background: #fff;
+  }
+  .headerLeft {
+    justify-content: center;
+  }
+  .logo {
+    padding: 10px;
+  }
+  .headerAddress {
+    padding: 10px;
+  }
+  .headerAddress p {
+    font-size: 12px;
+  }
+  .headerAddress h3 {
+    font-size: 15px;
+  }
+  .searchBox--container {
+    width: 100%;
+    position: relative;
+    z-index: 100;
+  }
+  .searchBox {
+    flex-grow: 1;
+    margin-right: 10px;
+    background-color: #f8f8f8;
+  }
+  .headerBtn {
+    margin: 0;
+    display: flex;
+    gap: 10px;
+  }
+  .headerBtn button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+  .searchBox, .headerBtn {
+    display: flex;
+    align-items: center;
+  }
+  .searchBox-container {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+  }
+  .bannerSection {
+    display: block;
+    margin-top: 100px;
+  }
+  .bannerSection img {
+    max-height: 150px;
+    object-fit: cover;
+    width: 100%;
+  }
+  .orderBanner {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .categoryItems {
+    flex-basis: 25%;
+    padding: 5px;
+  }
+  .categorySection {
+    padding: 10px;
+  }
+  .productSection {
+    padding: 30px 10px;
+    margin-bottom: 10px;
+  }
+  
+  .productRow {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .productItems {
+    min-width: 0;
+    width: 100%;
+  }
+  .productItems img {
+    height: 150px;
+  }
+  .footer {
+    padding-top: 0px;
+  }
+  .footer-mid1 {
+    padding: 10px;
+    flex-direction: column;
+  }
+  .usefulLinks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .usefulLinks ul {
+    flex-basis: calc(33.33% - 6px);
+  }
+  .usefulLinks ul li {
+    margin-bottom: 8px;
+  }
+  .usefulLinks ul li a {
+    font-size: 14px;
+  }
+  .footer-mid1-right {
+    padding: 10px;
+  }
+  .categories {
+    display: flex;
+    flex-direction: column;
+  }
+  .categories ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  .categories ul li {
+    flex-basis: calc(50% - 5px);
+  }
+  .categories ul li a {
+    font-size: 14px;
+  }
+  .footer-mid2 {
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+  }
+  .footer-mid2 p {
+    flex-basis: auto;
+    text-align: center;
+  }
+  .appIcons {
+    flex-basis: auto;
+    justify-content: center;
+  }
+  .social-logo {
+    flex-basis: auto;
+    justify-content: center;
+  }
+  .footer-bottom {
+    max-width: 100%;
+    padding: 10px;
+  }
+  .footer-bottom p {
+    padding: 0 10px;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  header {
+    padding: 15px;
+    gap: 20px;
+  }
+  
+  .headerLeft {
+    justify-content: flex-start;
+  }
+  
+  .logo {
+    padding: 12px;
+  }
+  
+  .headerAddress p {
+    font-size: 14px;
+  }
+  
+  .headerAddress h3 {
+    font-size: 17px;
+  }
+  
+  .searchBox {
+    flex-grow: 1;
+    margin-right: 15px;
+  }
+  
+  .headerBtn button {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+  
+  .bannerSection img {
+    max-height: 200px;
+  }
+  
+  .productRow {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .productItems img {
+    height: 180px;
+  }
+  
+  .categoryItems {
+    flex-basis: 20%;
+  }
+  
+  .footer-mid1 {
+    padding: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .usefulLinks ul {
+    flex-basis: calc(25% - 8px);
+  }
+  
+  .categories ul li {
+    flex-basis: calc(33.33% - 8px);
+  }
+}
